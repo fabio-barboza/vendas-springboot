@@ -1,0 +1,31 @@
+{
+    "name": "Produto",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "preco",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "produto",
+            "otherEntityName": "carrinho",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "produto"
+        }
+    ],
+    "changelogDate": "20180715201323",
+    "entityTableName": "produto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Carrinho",
+    "fields": [
+        {
+            "fieldName": "data",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "cliente",
+            "otherEntityName": "cliente",
+            "otherEntityField": "nome",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "carrinho"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "produto",
+            "relationshipName": "produto",
+            "otherEntityName": "produto",
+            "otherEntityField": "nome",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20180715201324",
+    "entityTableName": "carrinho",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

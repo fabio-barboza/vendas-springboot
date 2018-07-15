@@ -1,0 +1,25 @@
+entity Cliente {
+	id Integer,
+	nome String,
+	email String,
+	nascimento Instant    
+}
+
+entity Produto {
+	id Integer,
+    nome String,
+    preco Double
+}
+
+entity Carrinho {
+	id Integer,
+    data Instant
+}
+
+relationship OneToOne {
+	Carrinho{cliente(nome)} to Cliente
+}
+
+relationship ManyToMany {
+	Carrinho{produto(nome)} to Produto{produto}
+}

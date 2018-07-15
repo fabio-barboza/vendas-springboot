@@ -1,0 +1,24 @@
+
+{
+    "vendasApp": {
+        "carrinho" : {
+            "home": {
+                "title": "Carrinhos",
+                "createLabel": "Crear nuevo Carrinho",
+                "createOrEditLabel": "Crear o editar Carrinho"
+            },
+            "created": "Un nuevo Carrinho ha sido creado con el identificador {{ param }}",
+            "updated": "Un Carrinho ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Carrinho ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Carrinho {{ id }}?"
+            },
+            "detail": {
+                "title": "Carrinho"
+            },
+            "data": "Data",
+            "cliente": "Cliente",
+            "produto": "Produto"
+        }
+    }
+}
